@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Roque</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="contacto.css">
+    <script src="js/contacto.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu" class="label-check"><span class="material-icons material-icons-outlined">reorder</span></label>
+        <a href="carrito.html" class="logo"><span class="material-icons material-icons-outlined">
+            shopping_cart
+            </span></a>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="listaproductos.html">Lista de Productos</a>
+                </li>
+
+                <li>
+                    <a href="detalleproducto.html">Detalle</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contacto">
+        <div class="titulo-contacto">
+            <h3>Contacto</h3>
+        </div>
+        <form action="" class="form-contacto" id = "formulario">
+            <div>
+                <label for="">Nombre</label>
+                <input type="text" id="nombre">
+            </div>
+            
+            <div>
+                <label for="">Apellido</label>
+                <input type="text" id="apellido">
+            </div>
+            
+            <div>
+                <label for="">Email</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div>
+                <label for="">Consulta</label>
+                <textarea name="" id="" cols="18" rows="10" id="consulta"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+            
+        </form>
+
+    </section>
+
+    <footer>Bienvenidos al ejemplo de Pablo Roque &copy;</footer>
+</body>
+</html>
