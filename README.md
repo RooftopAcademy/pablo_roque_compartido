@@ -7,21 +7,22 @@
 * redSocial
 
 ### Producto
-###       id: Number
-###       nombre: String
-###       descripcion: String
-###       precio: Float
+#####       id: Number
+#####       nombre: String
+#####       descripcion: String
+#####       precio: Float
 ### Metodos: 
-###       setter, getter, addProduct, deleteProduct
-
+#####       setter, getter, addProduct, deleteProduct
+---
 ### Carrito
-###       id: Number
-###       products: []
+#####       id: Number
+#####       products: []
 ### Metodos: 
-###       setter, getter, addProductItem, deleteProductItem
-
+#####       setter, getter, addProductItem, deleteProductItem
+---
 ### redSocial
-###       id: Number
-###       nombre:
+#####       id: Number
+#####       nombre:
 ### Metodos: 
-###       setter, getter, addRedSocial, deleteRedSocial
+#####       setter, getter, addRedSocial, deleteRedSocial
+---
