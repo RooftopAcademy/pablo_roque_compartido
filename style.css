@@ -261,6 +261,22 @@ footer{
     transition: 300ms;
 }
 
+.container{
+    border: 1px solid black;
+    margin-top: 40px;
+    color: white;
+    background-color: black;
+}
+
+.table thead{
+    margin-left: 100px;
+    text-align: center;
+}
+
+.table thead tr th{
+    margin: 20px;
+    text-align: center;
+}
 
 @media (min-width: 576px) {
     .detalle{
@@ -394,8 +410,6 @@ footer{
         font-size: 25px;
     }
     
-    .boton{
-    }
 }
 
 @media (min-width:1400px) {
