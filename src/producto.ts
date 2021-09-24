@@ -67,7 +67,7 @@ export let products: Producto[] = [
     {
         id: 1,
         nombre: "Nootbock Asus",
-        descripcion: "Zenboock 14 UX42X",
+        descripcion: "El nuevo ZenBook 14 es más portátil que nunca. Es más fino, ligero y compacto, sin embargo; los puertos HDMI, Thunderbolt™ 4 USB-C®, USB de tipo A y el lector de tarjetas micro-SD le dan una versatilidad inigualable. ",
         precio: 15000,
         img: "img/pc1.jpg",
     },
