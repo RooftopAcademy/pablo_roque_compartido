@@ -1,5 +1,4 @@
 const caja = document.querySelectorAll('.caja');
-console.log(caja);
 
 
 caja.forEach(element => {
@@ -7,4 +6,6 @@ caja.forEach(element => {
         element.classList.toggle('tarjeta');
     });
 });
+
+
 
