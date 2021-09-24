@@ -21,7 +21,10 @@ header {
     cursor: pointer;
     color: white;
     margin-right: 20px;
-    padding: 0px
+    padding: 0px;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 
@@ -39,12 +42,6 @@ header {
     color: white;
     margin-left: 10px;
     cursor: pointer;
-}
-
-.logo{
-    line-height: 50px;
-    font-weight: bold;
-    font-size: 25px;
 }
 
 .menu{
@@ -123,7 +120,7 @@ footer{
     flex-direction: column;
 }
 
-.listado div {
+.caja{
     flex-grow: 1;
     border: 1px solid black;
     margin: 25px;
@@ -168,7 +165,7 @@ footer{
 
 .detalle{
     height: 700px;
-    display: flex;
+    display: flex;  
     flex-direction: column;
     background: white;
 }
@@ -278,43 +275,173 @@ footer{
         padding: 0px;
     }
 
-    .listado {
+    .cajas{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
 
-    .listado div {
-        flex-grow: 1;
-        border: 1px solid black;
-        width: 60%;
-        height: 250px;
-        overflow: hidden;
-        cursor: pointer;
-    }
-
-    .listado div img{
+    .caja div img{
         width: 45%;
         height: 45%;
         margin-left: 30%;
         margin-top: 25px;
     }
+
 }
 
 @media (min-width:768px) {
+    .menu-content{
+        left: 7%;
+    }
 
+    .cajas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .caja{
+        width: 200px;
+        height: 200px;
+    }
+
+    .caja input[type="submit"]{
+        margin: 0px;
+        margin-right: 5px;
+    }
+
+    
 }
 
 @media (min-width:992px) {
+    header{
+        height: 60px;
+    }
+
+    .label-check{
+        display: none;
+    }
+
+    .menu{
+        margin: 0px;
+    }
+
+    .menu ul{
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo{
+        margin-right: 30px;
+        margin-top: 10px;
+        padding: 0px;
+        font-size: 25px;
+    }
+
+    .logo span{
+        font-size: 27px;
+    }
+
+
+    .menu-content{
+        left: 5%;
+    }
+
+    .caja{
+        width: 250px;
+        height: 250px;
+    }
+
+    .caja input[type="submit"]{
+        margin-top: 20px;
+    }
 
 }
 
 @media (min-width:1200px) {
-
+    .detalle{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        background: white;
+    }
+    
+    .detalle img{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .caracteristicas{
+        font-size: 25px;
+    }
+    
+    .descripcion h2{
+        margin: 10px;
+        padding: 5px;
+        margin-left: 18px;
+        font-size: 29px;
+    }
+    
+    .descripcion p{
+        margin: 10px;
+        margin-left: 10px;
+        padding: 5px;
+        font-size: 25px;
+    }
+    
+    .boton{
+    }
 }
 
 @media (min-width:1400px) {
+    .menu ul{
+        margin-left: 40px;
+    }
 
+    .listado h1{
+        font-size: 35px;
+        margin-top: 20px;
+    }
+
+    .caja{
+        width: 400px;
+        height: 400px;
+    }
+
+
+    .caja input[type="submit"]{
+        margin-top: 20px;
+    }
+
+    .listado div img{
+        width: 200px;
+        height: 200px;
+        margin-left: 30%;
+        margin-top: 15px;
+    }
+    
+    
+    .listado div h3{
+        font-size: 28px;
+        margin-top: 3px;
+        margin-left: 25px;
+    }
+    
+    .listado div p{
+        font-size: 23px;
+        margin-top: 3px;
+        margin-left: 25px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    .listado div input{
+        width: 100px;
+    }
 }
 
