@@ -1,4 +1,6 @@
-function productItemView(product: Producto){
+import { Producto } from "./producto";
+
+export function productItemView(product: Producto){
     return `
         <div class="caja" id="${product.id}">
             <a href="detalleproducto.html"><img src="${product.img}" alt=""></a>
