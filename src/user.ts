@@ -1,4 +1,12 @@
- export class User{
+ interface Usuario{
+     id: number,
+     name: string,
+     username: string,
+     email: string
+ }
+ 
+ 
+ export class User implements Usuario{
     // _id: number;
     // _name: string;
     // _username: string;

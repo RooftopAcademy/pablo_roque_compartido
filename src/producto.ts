@@ -1,4 +1,12 @@
-export class Producto{
+interface Product{
+    id: number,
+    nombre: string,
+    descripcion: string,
+    precio: number,
+    img: string
+}
+
+export class Producto implements Product{
     //id: number;
     //_nombre: string;
     //_descripcion: string;
