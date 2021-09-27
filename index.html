@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pablo Roque</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacto.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <script src="js/index.js" defer></script>
-    <script src="js/user.js" defer></script>
+    <!--
+        <script src="js/index.js" defer></script>
+        <script src="js/user.js" defer></script>
+    -->
+    <script src="./dist/app.js" defer></script>
 
 </head>
 <body>
-
-    
 
     <header>
         <input type="checkbox" id="btn-menu">
@@ -25,18 +27,18 @@
         <nav class="menu">
             <ul>
                 <li>
-                    <a href="index.html">Inicio</a>
+                    <a class="rutas" href="#/">Inicio</a>
                 </li>
 
                 <li>
-                    <a href="listaproductos.html">Lista de Productos</a>
+                    <a class="rutas" href="#/listaproductos">Lista de Productos</a>
                 </li>
                 <li>
-                    <a href="users.html">Usuarios</a>
+                    <a class="rutas" href="#/users">Usuarios</a>
                 </li>
 
                 <li>
-                    <a href="contacto.html">Contacto</a>
+                    <a class="rutas" href="#/contacto">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -54,14 +56,8 @@
         </a>
     </div>
 
-    <section class="inicio">
-        <h1>Bienvenidos a la pagina de inicio</h1>
-        <p>
-            Esta es una pagina de para realizar un ejemplo visto en clase,
-            de como utilizar HTML y CSS para desarrollar una pagina web,
-            como asi decorarla.
-
-        </p>   
+    <section class="inicio" id="contenedor">
+        
     </section>
 
     <footer>Bienvenidos al ejemplo de Pablo Roque &copy;</footer>

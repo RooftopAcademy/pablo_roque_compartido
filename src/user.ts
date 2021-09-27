@@ -1,16 +1,16 @@
- interface Usuario{
+ export interface UsuarioInterface{
      id: number,
      name: string,
      username: string,
-     email: string
+     email: string,
  }
  
  
- export class User implements Usuario{
-    // _id: number;
-    // _name: string;
-    // _username: string;
-    // _email: string;
+ export class User implements UsuarioInterface{
+    // id: number;
+    // name: string;
+    // username: string;
+    // email: string;
 
     constructor(){
         this.id = 0;

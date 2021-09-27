@@ -63,7 +63,7 @@ export class Producto implements Product{
 
 }
 
-export let products: Producto[] = [
+export let products1: Producto[] = [
     {
         id: 1,
         nombre: "Nootbock Asus",

@@ -1,24 +1,20 @@
 import { User } from "./user"
+import { UsuarioInterface } from "./user"
+
 
 export let users: User[] = []
 
-interface responseUser{
-    id: number,
-    name: string,
-    username: string,
-    email: string
-}
 
-const url: string = "https://jsonplaceholder.typicode.com/users";
-async function getUsers(url: string){
-    const respuesta = await fetch("https://jsonplaceholder.typicode.com/users")
+
+export async function getUsers(url: string){
+    const respuesta = await fetch(url)
                     .then(response => response.json())
                     .then(data => pushUsers(data))
                     .catch(err => console.log(err))
 }
 
 
-const pushUsers = (respuesta: responseUser[]) =>{
+const pushUsers = (respuesta: UsuarioInterface[]) =>{
     for (let index = 0; index < respuesta.length; index++) {
         users.push(respuesta[index]);
     }
@@ -28,4 +24,3 @@ const pushUsers = (respuesta: responseUser[]) =>{
 //   }
 }
 
-getUsers(url);

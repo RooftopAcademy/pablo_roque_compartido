@@ -23,11 +23,20 @@ class UI{
 const ui = new UI();
 ui.addProducts(products);
 
-const btn = document.getElementById('btn-agregar');
+/*const btn = document.getElementById('btn-agregar');
 btn.addEventListener('click',function(e){
     /*const id = document.getElementById(products[0])*/
-    const carrito = new Carrito();
+    /*const carrito = new Carrito();
     carrito.agregarCarrito(products[0])
     carrito.addCarrito();
     e.preventDefault();
-});
+});*/
+
+
+/*Array.from(document.getElementsByClassName('elemento').forEach(el => {
+    el.addEventListener('click',function(e){
+        e.preventDefault
+        console.log('')
+        e.target.href == 'contacto'
+    })
+}))*/ 
