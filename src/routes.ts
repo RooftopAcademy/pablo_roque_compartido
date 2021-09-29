@@ -1,4 +1,4 @@
-import { Menu } from "./helpers/boton-menu"
+import { btnRedesSociales } from "./helpers/boton-menu"
 import { validarFormulario } from "./helpers/formValidator"
 import { formPage } from "./views/formPage"
 import { homePage } from "./views/home"
@@ -18,7 +18,7 @@ export function router(route: string){
     
     switch (route) {
         case '#/':{
-            Menu()
+            btnRedesSociales()
             contenido.classList.remove('listado')
             contenido.setAttribute('class','inicio')
             return contenido.innerHTML = homePage()
