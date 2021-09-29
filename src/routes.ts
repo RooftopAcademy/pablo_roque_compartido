@@ -1,4 +1,4 @@
-import { Menu } from "./helpers/boton-menu"
+import { btnRedesSociales } from "./helpers/boton-menu"
 import { validarFormulario } from "./helpers/formValidator"
 import { formPage } from "./views/formPage"
 import { homePage } from "./views/home"
@@ -7,6 +7,7 @@ import { renderProductList } from "./components/renderProductList"
 import { renderUserList } from "./components/renderUserList"
 import { UI } from "./models/UI"
 import { users } from "./services/userApi"
+import blackCard from './helpers/cardProductEvent'
 
 
 const contenido = document.getElementById('contenedor') as HTMLElement
@@ -18,7 +19,7 @@ export function router(route: string){
     
     switch (route) {
         case '#/':{
-            Menu()
+            btnRedesSociales()
             contenido.classList.remove('listado')
             contenido.setAttribute('class','inicio')
             return contenido.innerHTML = homePage()
@@ -31,7 +32,9 @@ export function router(route: string){
         }  
         case '#/listaproductos':{
             contenido.setAttribute('class','listado')
-            return contenido.appendChild(renderProductList(products1))
+            contenido.appendChild(renderProductList(products1))
+            blackCard();
+            return contenido.innerHTML;
             //return console.log("lista de productos")
         }
         case '#/users':{
