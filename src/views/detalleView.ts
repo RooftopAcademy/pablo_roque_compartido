@@ -1,4 +1,4 @@
-import { Producto } from "./producto";
+import { Producto } from "../models/producto";
 
 export function detalleItemView(product: Producto){
     return `

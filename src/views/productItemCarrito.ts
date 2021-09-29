@@ -1,6 +1,6 @@
-import { Producto } from "./producto";
+import { Producto } from "../models/producto";
 
-export function productItemView(product: Producto){
+export function productItemCarritoView(product: Producto){
     return `
         <div class="caja" id="${product.id}">
             <a href="detalleproducto.html"><img src="${product.img}" alt=""></a>
@@ -8,7 +8,7 @@ export function productItemView(product: Producto){
             <p>
                 ${product.nombre}
             </p>
-            <input type="submit" value="Agregar" class="btn-agregar">
+            <input type="submit" value="Borrar" class="btn-borrar">
         </div>
     `;
 };
