@@ -1,18 +1,17 @@
-import { Menu } from "./boton-menu"
-import { validarFormulario } from "./contacto"
-import { formPage } from "./formPage"
-import { homePage } from "./home"
-import { Producto, products1 } from "./producto"
-import { renderProductList } from "./renderProductList"
-import { renderUserList } from "./renderUserList"
-import { UI } from "./UI"
-import { users } from "./userApi"
+import { Menu } from "./helpers/boton-menu"
+import { validarFormulario } from "./helpers/formValidator"
+import { formPage } from "./views/formPage"
+import { homePage } from "./views/home"
+import { products1 } from "./models/producto"
+import { renderProductList } from "./components/renderProductList"
+import { renderUserList } from "./components/renderUserList"
+import { UI } from "./models/UI"
+import { users } from "./services/userApi"
 
 
 const contenido = document.getElementById('contenedor') as HTMLElement
 let ui = new UI
 ui.addUsers(users)
-const arreglo_usuarios = ui.getUsers()
 
 export function router(route: string){
     contenido.innerHTML = '';
@@ -20,18 +19,23 @@ export function router(route: string){
     switch (route) {
         case '#/':{
             Menu()
+            contenido.classList.remove('listado')
+            contenido.setAttribute('class','inicio')
             return contenido.innerHTML = homePage()
         }      
         case '#/contacto':{
+            contenido.classList.remove('listado')
             contenido.innerHTML = formPage()
-            //validarFormulario()
+            validarFormulario()
             return contenido.innerHTML;
         }  
         case '#/listaproductos':{
+            contenido.setAttribute('class','listado')
             return contenido.appendChild(renderProductList(products1))
             //return console.log("lista de productos")
         }
         case '#/users':{
+            contenido.setAttribute('class','listado')
             return renderUserList()
         }  
         default:

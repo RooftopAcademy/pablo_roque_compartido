@@ -97,5 +97,5 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
-  "include": ["./src/*.ts"]
+  "include": ["./src/*.ts", "src/helpers/boton-menu.ts", "src/helpers/formValidator.ts", "src/views/detalleView.ts", "src/views/formPage.ts", "src/views/home.ts", "src/views/productItemCarrito.ts", "src/views/usuarioItem.ts", "src/views/productItem.ts", "src/models/user.ts", "src/models/producto.ts", "src/models/UI.ts", "src/models/carrito.ts", "src/services/userApi.ts", "src/components/renderProductList.ts", "src/components/renderUserList.ts"]
 }

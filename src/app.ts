@@ -1,14 +1,4 @@
-import { UI } from "./UI";
-import { users } from './userApi';
-import { products1 } from './producto';
-import { detalleItemView } from "./detalleView";
-import { Menu } from "./boton-menu";
-import { validarFormulario } from "./contacto";
-import { homePage } from "./home";
-import { formPage } from "./formPage";
 import { router } from "./routes";
-
-
 function app(){
 
     //  Array.from(rutas).forEach(ruta =>{
