@@ -1,4 +1,4 @@
-export function validarFormulario(){
+export function validateContactForm(){
 
     const nombre = document.getElementById("nombre") as HTMLInputElement;
     const apellido = document.getElementById("apellido") as HTMLInputElement;

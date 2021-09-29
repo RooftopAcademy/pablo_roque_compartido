@@ -1,10 +1,13 @@
 import { Producto } from './producto';
 import { User } from './user';
 
-
+/**
+ * Esta clase almacena los productos y los usuarios
+ */
 export class UI{
     products: Producto[];
     users: User[];
+    
     constructor(){
         this.products = []
         this.users = []

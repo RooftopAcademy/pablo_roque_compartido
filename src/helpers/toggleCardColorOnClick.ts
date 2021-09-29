@@ -1,6 +1,7 @@
 
-export default function blackCard(){
+export default function toggleCardColorOnClick(){
     const caja = document.querySelectorAll('.caja')
+    
     caja.forEach(element => {
         element.addEventListener('click',function(){
             element.classList.toggle('tarjeta');
