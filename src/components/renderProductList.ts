@@ -9,6 +9,7 @@ export function renderProductList(arreglo: Producto[]){
         divElement.classList.add('cajas');
         divElement.id = 'product-list';
         divElement.innerHTML += elemento;
+        
     });
 
     return divElement;

@@ -4,7 +4,6 @@ import { usuarioView } from "../views/usuarioItem";
 const contenido = document.getElementById('contenedor') as HTMLElement
 const URL: string = "https://jsonplaceholder.typicode.com/users";
 getUsers(URL);
-console.log(users)
 export function renderUserList(){
 
     users.forEach(user=> {

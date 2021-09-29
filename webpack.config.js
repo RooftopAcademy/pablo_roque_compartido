@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: ['./src/app.ts','./src/helpers/boton-menu.ts','./src/models/carrito.ts','./src/helpers/formValidator.ts',
+  entry: ['./src/app.ts','./src/helpers/boton-menu.ts','./src/helpers/cardProductEvent.ts','./src/models/carrito.ts','./src/helpers/formValidator.ts',
     './src/views/detalleView.ts','./src/views/productItem.ts','./src/views/productItemCarrito.ts','./src/models/producto.ts',
     './src/models/UI.ts','./src/models/user.ts','./src/services/userApi.ts','./src/views/usuarioItem.ts'],
   mode: 'development',
