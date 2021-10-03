@@ -2,24 +2,26 @@ import { btnRedesSociales } from "./helpers/boton-menu"
 import { validateContactForm } from "./helpers/validateContactForm"
 import { formPage } from "./views/formPage"
 import { homePage } from "./views/home"
-import { products1 } from "./models/producto"
-import { renderProductList } from "./components/renderProductList"
-import { renderUserList } from "./components/renderUserList"
+import  listProductsPage from './views/listProductsPage'
 import toggleCardColorOnClick from './helpers/toggleCardColorOnClick'
 
-let routes = {
-    '#/' : function () {
-        homePage()
+const app = document.getElementById("app") as HTMLElement
+
+const routes: any = {
+    
+    '#/' :  function(){
+        app.innerHTML = homePage()
+        btnRedesSociales()
     },
-    '#/contacto' : function () {
-        formPage()
+    '#/contacto' : function(){
+        app.innerHTML = formPage()
+        validateContactForm()
     },
-    '#/listaproductos' : function () {
-        renderProductList(products1)
-    },
-    '#/users' : function () {
-        renderUserList()
-    }
+    '#/listaproductos' : function(){
+        app.innerHTML = listProductsPage()
+        toggleCardColorOnClick()
+    } ,
+    //'#/users' : () => renderUserList()
 }
 
 export function router(route: string) {
@@ -27,37 +29,6 @@ export function router(route: string) {
         routes[route]()
     }
 
+    return routes[route]()
 
-    // switch (route) {
-        // case '#/': {
-            // Asigna un evento a un elemento
-            // btnRedesSociales()
-
-            // cambios en el contenedor
-            // contenedor.classList.remove('listado')
-            // contenedor.setAttribute('class','inicio')
-            
-            // render(contenedor, homePage())
-        // }
-
-        // case '#/contacto':{
-            // contenedor.classList.remove('listado')
-            // contenedor.innerHTML = formPage()
-            // validateContactForm() // despues de que se cargo la pagina
-        // }  
-        
-        // case '#/listaproductos':{
-            // contenedor.setAttribute('class','listado')
-            // contenedor.appendChild(renderProductList(products1))
-            // toggleCardColorOnClick(); // despues que se cargo la pagina
-        // }
-
-        // case '#/users':{
-            // contenedor.setAttribute('class','listado')
-            // return renderUserList()
-        // }
-        
-        // default:
-            // return console.log('404 NOT FOUND')
-    // }
 }

@@ -1,14 +1,15 @@
-import { UI } from "./models/UI"
+import { storeData } from "./storeData"
 import { users } from "./services/userApi"
 import {router} from './router'
+import { products1 } from "./models/producto"
 
 class App {
-    private container? : HTMLElement
-    private router : any
+    private container?: HTMLElement
+    private router: any
 
     public loadRouter() : void {
         this.router = router
-
+        console.log("hola")
         /**
          * Url por defecto
          */
@@ -26,8 +27,6 @@ class App {
             /**
              * Limpia la vista actual cuando cambia una ruta
              */
-            this.render(this.container as HTMLElement)
-
             /**
              * Insertando el contenido de la pagina
              */
@@ -45,16 +44,13 @@ class App {
 }
 
 let app = new App
-app.setContainer(document.getElementById('contenedor') as HTMLElement)
-
-
-
-
+app.setContainer(document.getElementById('app') as HTMLElement)
+app.loadRouter()
 
  /**
   * Inicializa el store de datos
   */
- let store = new UI
+ let store = new storeData
  
  /**
   * Cargar la lista de usuarios

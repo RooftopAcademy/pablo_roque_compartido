@@ -1,9 +1,5 @@
  import UsuarioInterface from '../interfaces/userInterface'
  export class User implements UsuarioInterface{
-    // id: number;
-    // name: string;
-    // username: string;
-    // email: string;
 
     constructor(){
         this.id = 0;
