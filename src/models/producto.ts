@@ -1,17 +1,5 @@
-interface Product{
-    id: number,
-    nombre: string,
-    descripcion: string,
-    precio: number,
-    img: string
-}
-
-export class Producto implements Product{
-    //id: number;
-    //_nombre: string;
-    //_descripcion: string;
-    //_precio: number;
-    //_img: string;
+import ProductInterface from '../interfaces/productInterface'
+export class Producto implements ProductInterface{
 
     constructor(){
         this.id = 0;
@@ -63,47 +51,47 @@ export class Producto implements Product{
 
 }
 
-export let products: Producto[] = [
+export let products1: Producto[] = [
     {
         id: 1,
         nombre: "Nootbock Asus",
         descripcion: "El nuevo ZenBook 14 es más portátil que nunca. Es más fino, ligero y compacto, sin embargo; los puertos HDMI, Thunderbolt™ 4 USB-C®, USB de tipo A y el lector de tarjetas micro-SD le dan una versatilidad inigualable. ",
-        precio: 15000,
+        precio: 5000,
         img: "img/pc1.jpg",
     },
     {
         id: 2,
         nombre: "Nootbock Asus",
         descripcion: "Zenboock 14 UX42X",
-        precio: 15000,
-        img: "img/pc1.jpg",
+        precio: 45000,
+        img: "img/pc2.jpg",
     },
     {
         id: 3,
         nombre: "Nootbock Asus",
         descripcion: "Zenboock 14 UX42X",
-        precio: 15000,
-        img: "img/pc1.jpg",
+        precio: 28000,
+        img: "img/pc3.jpg",
     },
     {
         id: 4,
         nombre: "Nootbock Asus",
         descripcion: "Zenboock 14 UX42X",
-        precio: 15000,
-        img: "img/pc1.jpg",
+        precio: 700,
+        img: "img/pc3.jpg",
     },
     {
         id: 5,
         nombre: "Nootbock Asus",
         descripcion: "Zenboock 14 UX42X",
-        precio: 15000,
-        img: "img/pc1.jpg",
+        precio: 70000,
+        img: "img/pc2.jpg",
     },
     {
         id: 6,
         nombre: "Nootbock Asus",
         descripcion: "Zenboock 14 UX42X",
-        precio: 15000,
+        precio: 10000,
         img: "img/pc1.jpg",
     },
 ]

@@ -1,6 +1,6 @@
-import { Producto } from "./producto";
+import { Producto } from "../models/producto";
 
-export function detalleItemView(product: Producto){
+export default function detalleItemView(product: Producto){
     return `
         <div>
             <img src="${product.img}" alt="">
