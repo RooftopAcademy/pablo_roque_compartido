@@ -2,8 +2,8 @@ import { Producto } from "../models/producto";
 
 export function productItemView(product: Producto){
     return `
-        <div class="caja" id="${product.id}">
-            <a href="/detalleproducto" class="enlace-detalle"><img src="${product.img}" alt=""></a>
+        <div class="caja">
+            <a href="#/detalleproducto" onClick="showID(this.id)" class="enlace-detalle" id="${product.id}"><img src="${product.img}" alt=""></a>
             <h3>$${product.precio}</h3>
             <p>
                 ${product.nombre}

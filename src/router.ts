@@ -4,6 +4,7 @@ import { formPage } from "./views/formPage"
 import { homePage } from "./views/home"
 import  listProductsPage from './views/listProductsPage'
 import toggleCardColorOnClick from './helpers/toggleCardColorOnClick'
+import {productDetailPage} from './views/renderProductDetail'
 
 const app = document.getElementById("app") as HTMLElement
 
@@ -21,6 +22,9 @@ const routes: any = {
         app.innerHTML = listProductsPage()
         toggleCardColorOnClick()
     } ,
+    '#/detalleproducto': function(){
+        app.innerHTML = productDetailPage(0)
+    }
     //'#/users' : () => renderUserList()
 }
 
